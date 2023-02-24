@@ -1,0 +1,469 @@
+/* centering */
+.page-view, .page-view .page-content .typed-text, .services .row .service-icon, .subscribe .btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main buttons style */
+.btn-transparent, .btn-colored {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  padding: 8px 20px;
+  margin: 10px;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+.btn-transparent a, .btn-colored a {
+  color: white;
+}
+
+/* Colored buttons style */
+.btn-colored {
+  background-color: #03C4EB;
+  border: 2px solid #03C4EB;
+}
+.btn-colored:hover {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+/* Transparent buttons style */
+.btn-transparent {
+  background-color: transparent;
+  border: 2px solid white;
+}
+.btn-transparent:hover {
+  background-color: #03C4EB;
+  border: 2px solid #03C4EB;
+}
+
+/* Background Image Style */
+.page-view, .services, .subscribe {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+/* Overlay Style */
+.page-view .overlay, .services .overlay2, .subscribe .overlay3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.portfolio img, .testimonials .client .client-pic img, .testimonials .client-opinion, .team .team-box img {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.testimonials .client .client-info h4, .team .team-box .team-info h4 {
+  color: #03C4EB;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.testimonials .client .client-info p, .team .team-box .team-info p {
+  margin-bottom: 0;
+}
+
+/* jQuery Class */
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99000;
+}
+
+/* ========== Start Rules ============  */
+html, body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: auto !important;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #666666;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 30px 0 10px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 26px;
+}
+
+.active {
+  color: #03C4EB !important;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.sec-header {
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+}
+.sec-header::after {
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 3px;
+  bottom: -50%;
+  left: 50%;
+  background: #03C4EB;
+}
+
+.sec-description {
+  color: #666666;
+  padding: 40px 0;
+  margin: 0 auto;
+  max-width: 70%;
+  text-align: center;
+}
+
+/* ========== End Rules ============  */
+/* To top button */
+.arrow-btn {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: none;
+  position: fixed;
+  text-align: center;
+  padding-top: 8px;
+  bottom: 15px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+  font-size: 16px;
+  background-color: #03C4EB;
+  color: white;
+  border: none;
+}
+.arrow-btn:hover {
+  color: #03C4EB;
+  background-color: transparent;
+  border: 1px solid #03C4EB;
+}
+
+/* Start Page-view Style */
+.page-view {
+  background-image: url(../../img/hero-bg.jpg);
+  height: 100vh;
+  color: white;
+}
+.page-view .overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.page-view .page-content {
+  position: relative;
+  text-align: center;
+}
+.page-view .page-content .typed-text {
+  font-family: "Raleway", sans-serif;
+}
+.page-view .page-content .typed-text .const-text {
+  color: #ccc;
+  font-size: 30px;
+  padding: 15px;
+}
+.page-view .page-content .typed-text .change-text {
+  position: relative;
+  color: white;
+  border-right: 2px solid white;
+  font-size: 35px;
+  color: white;
+  border-bottom: 2px solid #03C4EB;
+}
+.page-view .page-content .typed-text .typed-cursor {
+  opacity: 0;
+}
+
+/* End Page-view Style */
+/* Start Header Style */
+.header {
+  background-color: #0d0d0d !important;
+}
+.header .navbar {
+  font-family: "Raleway", sans-serif;
+}
+.header .navbar .navbar-brand img {
+  height: 50px;
+}
+.header .navbar a {
+  font-size: 14px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.header .navbar a:hover {
+  color: #03C4EB;
+}
+.header .navbar .dropdown-menu {
+  background-color: #0d0d0d;
+}
+.header .navbar .dropdown-menu a {
+  color: white;
+}
+.header .navbar .dropdown-menu a:hover {
+  background-color: transparent !important;
+  color: #03C4EB;
+}
+
+/* End Header Style */
+/* Start About Style */
+.about .sec-title {
+  color: #333;
+  font-weight: 700;
+}
+
+/* End About Style */
+/* Start Services Style */
+.services {
+  background-image: url(../../img/services-bg.jpg);
+}
+.services .overlay2 {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.services .container {
+  position: relative;
+}
+.services .row .service-icon {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  padding: 20px;
+  margin-right: 15px;
+  background-color: #03C4EB;
+  border: 1px solid #03C4EB;
+}
+.services .row .service-icon i {
+  font-size: 24px;
+  color: white;
+}
+.services .row h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #111;
+}
+.services .row p {
+  line-height: 24px;
+}
+.services .row .col-lg-4 {
+  cursor: pointer;
+  padding: 0 12px;
+  margin-bottom: 15px;
+}
+.services .row .col-lg-4:hover .service-icon {
+  background-color: transparent;
+}
+.services .row .col-lg-4:hover .service-icon i {
+  color: #03C4EB;
+}
+
+/* End Services Style */
+/* Start Subscribe Style */
+.subscribe {
+  color: white;
+  background-image: url(../../img/subscribe-bg.jpg);
+}
+.subscribe .overlay3 {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.subscribe .container {
+  position: relative;
+}
+/* End Subscribe Style */
+/* Start Portfolio Style */
+.portfolio ul a {
+  cursor: pointer;
+  color: #666666;
+  font-weight: 700;
+}
+.portfolio ul a:hover {
+  color: #03C4EB;
+}
+.portfolio img {
+  padding: 5px;
+}
+
+/* End Portfolio Style */
+/* Start Testimonials Style */
+.testimonials .client .client-pic {
+  text-align: center;
+}
+.testimonials .client .client-pic img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 250px;
+  padding: 5px;
+}
+.testimonials .client .client-info {
+  text-align: center;
+  margin-top: 20px;
+}
+.testimonials .client-opinion {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  margin-top: 48px !important;
+  padding: 40px;
+  background-color: white;
+}
+
+/* End Testimonials Style */
+/* Start Team Style */
+.team .team-box {
+  cursor: pointer;
+}
+.team .team-box .team-info {
+  text-align: center;
+  margin-top: 20px;
+}
+.team .team-box .team-info h4 {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  color: #666666;
+  margin-bottom: 0;
+}
+.team .team-box .team-info p {
+  font-style: italic;
+  font-size: 14px;
+}
+.team .team-box .team-info .social {
+  margin-top: 15px;
+}
+.team .team-box .team-info .social i {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  font-size: 18px;
+  padding: 3px;
+  color: #b3b3b3;
+  cursor: pointer;
+}
+.team .team-box .team-info .social i:hover {
+  color: #03C4EB;
+}
+.team .team-box:hover h4 {
+  color: #03C4EB;
+}
+
+/* End Team Style */
+/* Start Contact Style */
+.contact .col-1 {
+  padding: 0;
+}
+.contact .col-11 {
+  padding: 5px 20px;
+}
+.contact a {
+  color: #03C4EB;
+  font-size: 25px;
+}
+.contact .form-control {
+  margin-bottom: 15px;
+}
+.contact form button:hover {
+  color: #03C4EB;
+  border: 2px solid #03C4EB;
+}
+
+/* End Contact Style */
+/* Start Footer Style */
+.footer {
+  color: white;
+  padding: 30px;
+  background-color: #0d0d0d;
+  text-align: center;
+}
+.footer p {
+  margin: 0;
+}
+.footer p span {
+  font-size: 14px;
+  color: #03C4EB;
+}
+
+/* End Footer Style */
+@media (max-width: 600px) {
+  .page-view img {
+    width: 200px;
+  }
+  .page-view h1 {
+    font-size: 20px;
+  }
+  .page-view .typed-text {
+    display: none !important;
+  }
+  .page-view button {
+    padding: 5px;
+  }
+}/*# sourceMappingURL=style.css.map */
