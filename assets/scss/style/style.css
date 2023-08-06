@@ -1,4 +1,7 @@
 /* centering */
+body{
+  scroll-behavior: smooth;
+}
 .page-view, .page-view .page-content .typed-text, .services .row .service-icon, .subscribe .btn-box {
   display: flex;
   justify-content: center;
